@@ -1,0 +1,14 @@
+export const LIST_OF_EVENTS = "/events/list-event";
+export const GET_EVENTS_COUNT = "/events/event-count";
+export const LIST_OF_SUB_BANNER = "/banners/list-sub-banner";
+export const LIST_OF_Place = "/places/list-place";
+export const PLACE_BY_ID = "/places/";
+export const GET_PLACE_COUNT = "/places/place-count";
+export const LIST_OF_Blog = "/blogs/blogs-list";
+export const BLOG_BY_ID = "/blogs/";
+export const BLOG_BY_SEO_URL = "/blogs/get-blog-by-seo-url/";
+export const GET_BLOG_COUNT = "/blogs/blog-count";
+export const LIST_OF_ADS = "/ads/list-ads";
+export const COMBINED_CITY_DATA = "/search/combined-city-data";
+export const LIST_OF_PREDEFINED = "/predefined/by-type-and-code";
+export const SEARCH = "/search/";

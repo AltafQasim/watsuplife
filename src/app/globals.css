@@ -1,0 +1,420 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+@font-face {
+  font-family: SculpinReg;
+  src: url("../assets//Fonts/Process-Type-Foundry-Sculpin-Regular.ttf");
+  weight: 400;
+}
+
+@font-face {
+  font-family: SculpinMed;
+  src: url("../assets//Fonts/Process-Type-Foundry-Sculpin-Medium.ttf");
+  weight: 500;
+}
+
+@font-face {
+  font-family: SculpinBold;
+  src: url("../assets//Fonts/Process-Type-Foundry-Sculpin-Bold.ttf");
+  weight: 700;
+}
+
+@font-face {
+  font-family: SenBold;
+  src: url("../assets//Fonts/Sen-Bold.ttf");
+  weight: 700;
+}
+
+:root {
+  --bg: #f5f5f5;
+  --bgSoft: #2b2d42;
+  --text: #292d32;
+  --textSoft: #e5e5e5;
+  --btn: #3673fd;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* .container {
+  background-color: rebeccapurple;
+  width: 1200px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+/* Typography */
+
+.color-primary {
+  background: #0fabf5;
+}
+
+.color-yellow {
+  background: #f8cf41;
+}
+
+.color-orange {
+  background: #e77944;
+}
+
+.color-secondary {
+  background: #292d32;
+}
+
+.color-grey {
+  background: #6d6e76;
+}
+
+.color-dark {
+  background: #aaaaaa;
+}
+
+.color-white {
+  background: #ffffff;
+}
+
+.color-light {
+  background: #f5f5f5;
+}
+
+.color-cream {
+  background: #f7f5f1;
+}
+
+.font-sculpin-bold {
+  font-family: SculpinBold;
+}
+.font-sculpin-med {
+  font-family: SculpinMed;
+}
+.font-sculpin-reg {
+  font-family: SculpinReg;
+}
+
+.h1-bold {
+  font-family: SculpinBold;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.h1-med {
+  font-family: SculpinMed;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.h1-reg {
+  font-family: SculpinReg;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.h2-bold {
+  font-family: SculpinBold;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.h2-med {
+  font-family: SculpinMed;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.h2-reg {
+  font-family: SculpinReg;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.h3-bold {
+  font-family: SculpinBold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.h3-med {
+  font-family: SculpinMed;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.h3-reg {
+  font-family: SculpinReg;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.h4-bold {
+  font-family: SculpinBold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.h4-med {
+  font-family: SculpinMed;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.h4-reg {
+  font-family: SculpinReg;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.h5-bold {
+  font-family: SculpinBold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.h5-med {
+  font-family: SculpinMed;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.h5-reg {
+  font-family: SculpinReg;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.h6-bold {
+  font-family: SculpinBold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.h6-med {
+  font-family: SculpinMed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.h6-reg {
+  font-family: SculpinReg;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body-bold {
+  font-family: SculpinBold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.body-reg {
+  font-family: SculpinReg;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.body-med {
+  font-family: SculpinMed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text-18-500 {
+  font-family: SculpinMed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text-16-500 {
+  font-family: SculpinMed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+.text-28-700 {
+  font-family: "Sen", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+.text-btn {
+  font-family: SculpinBold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-shadow {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px;
+}
+
+.booknow-btn-text {
+  font-family: SculpinMed;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #292d32;
+}
+
+.footer-links {
+  font-family: SculpinMed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+.copyright-text {
+  font-family: SculpinReg;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.text-14-400 {
+  font-family: SculpinReg;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.text-14-500 {
+  font-family: SculpinMed;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.text-16-700 {
+  font-family: SculpinBold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+.text-14-700 {
+  font-family: SculpinBold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.83px;
+}
+
+.text-16-900 {
+  font-family: SculpinBold;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+.text-16-400 {
+  font-family: SculpinReg;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-30-700 {
+  font-family: SculpinBold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.text-20-500 {
+  font-family: SculpinReg;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text-6D6E76 {
+  color: #6d6e76;
+}
+.text-FFD050 {
+  color: #ffd050;
+}
+.text-57C4F9 {
+  color: #57c4f9;
+}
+.text-E77944 {
+  color: #e77944;
+}
+.text-0FABF5 {
+  color: #0fabf5;
+}
+.color-232536 {
+  color: #232536;
+}
+.color-292929 {
+  color: #292929;
+}
+.color-border {
+  border-color: #e8e8e8;
+}
+
+.Sen-bold {
+  font-family: SenBold;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
